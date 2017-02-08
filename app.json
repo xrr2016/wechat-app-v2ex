@@ -1,8 +1,8 @@
 {
   "pages":[
-    "pages/hot/hot",
+    "pages/latest/latest",
      "pages/index/index",
-    "pages/latest/latest"
+    "pages/hot/hot"
   ],
   "window":{
     "backgroundTextStyle":"light",

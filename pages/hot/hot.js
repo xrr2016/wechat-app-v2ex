@@ -14,6 +14,7 @@ Page({
        self.setData({
          hotTopics : res.data
        })
+       console.dir(self.data.hotTopics)
      }
    })
   }

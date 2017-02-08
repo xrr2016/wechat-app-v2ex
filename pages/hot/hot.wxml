@@ -1,7 +1,9 @@
 <!--pages/hot/hot.wxml-->
-<view class="container">
-    <text>{{msg}}</text>
-    <block wx:for="{{ hotTopics }}">
-        {{ item.title }}
+<view class="">
+  <text>{{msg}}</text>
+  <view wx:for="{{ hotTopics }}" wx:key="id">
+    <block>
+      {{ item.title }}
     </block>
+  </view>
 </view>
