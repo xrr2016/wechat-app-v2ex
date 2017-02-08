@@ -1,7 +1,7 @@
 {
   "pages":[
-    "pages/index/index",
     "pages/hot/hot",
+     "pages/index/index",
     "pages/latest/latest"
   ],
   "window":{
