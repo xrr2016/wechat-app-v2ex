@@ -11,15 +11,20 @@
     "navigationBarTextStyle":"black"
   },
   "tabBar":{
-    "color":"blue",
+    "color":"#ffffff",
     "selectedColor": "#000000",
-    "backgroundColor": "#ddd",
+    "backgroundColor": "#000000",
+    "position":"bottom",
     "list":[{
       "pagePath":"/pages/latest",
-      "text":"最新主题"
+      "text":"最新主题",
+      "iconPath":"",
+      "selectedIconPath": ""
     },{
       "pagePath":"/pages/hot",
-      "text":"最热主题"
+      "text":"最热主题",
+      "iconPath":"",
+      "selectedIconPath": ""
     }]
   }
 }
