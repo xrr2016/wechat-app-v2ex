@@ -6,25 +6,24 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#769FCD",
     "navigationBarTitleText": "V2EX",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"light",
+    "backgroundColor": "#f4f4f4",
+    "enablePullDownRefresh": true
   },
-  "tabBar":{
-    "color":"#ffffff",
-    "selectedColor": "#000000",
-    "backgroundColor": "#000000",
+  "tabBar": {
+    "color": "#ddd",
+    "selectedColor":"#fff",
+    "backgroundColor": "#B9D7EA",
+    "borderStyle" : "white",
     "position":"bottom",
-    "list":[{
-      "pagePath":"/pages/latest",
-      "text":"最新主题",
-      "iconPath":"",
-      "selectedIconPath": ""
+    "list" : [{
+      "pagePath":"pages/latest/latest",
+      "text":"最新主题"
     },{
-      "pagePath":"/pages/hot",
-      "text":"最热主题",
-      "iconPath":"",
-      "selectedIconPath": ""
+      "pagePath":"pages/hot/hot",
+      "text":"最热主题"
     }]
   }
 }
