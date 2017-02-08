@@ -1,11 +1,25 @@
 {
   "pages":[
-    "pages/index/index"
+    "pages/index/index",
+    "pages/hot/hot",
+    "pages/latest/latest"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "V2EX",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "color":"blue",
+    "selectedColor": "#000000",
+    "backgroundColor": "#ddd",
+    "list":[{
+      "pagePath":"/pages/latest",
+      "text":"最新主题"
+    },{
+      "pagePath":"/pages/hot",
+      "text":"最热主题"
+    }]
   }
 }
