@@ -16,5 +16,13 @@ Page({
        })
      }
    })
+  },
+  showContent(e){
+    const content = e.currentTarget.dataset.content
+    const url = e.currentTarget.dataset.url
+    wx.navigateTo({
+      // url: "/pages/topic/topic?content=" + content
+      url : `/pages/topic/topic?content=${content}&url=${url}`
+    })
   }
 })

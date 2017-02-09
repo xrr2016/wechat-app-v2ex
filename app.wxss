@@ -20,6 +20,9 @@
   background: #B9D7EA;
   margin: 0 10px;
 }
+.hover{
+  background-color: #B9D7EA;
+}
 .topic-title{
   text-align: left;
   width: 100%;
