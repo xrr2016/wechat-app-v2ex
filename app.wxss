@@ -1,9 +1,28 @@
 /**app.wxss**/
 .container {
-  height: 100%;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  align-items: baseline;
+  justify-content: flex-start;
   box-sizing: border-box;
 } 
+.topic-title{
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: blod;
+  font-style: italic;
+  padding: 12px auto;
+  margin: 6px auto;
+}
+.topic-item{
+  width: 100%;
+  color: black;
+  padding: 12px 12px;
+  font-size: 16px;
+  text-align: left;
+  text-indent: 1em;
+}

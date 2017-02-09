@@ -1,9 +1,7 @@
 <!--pages/latest/latest.wxml-->
-<view class="">
-  <text>{{msg}}</text>
-  <view wx:for="{{ latestTopics }}" wx:key="id">
-    <block>
+<view class="container">
+  <text class="topic-title">{{msg}}</text>
+  <view class="topic-item" wx:for="{{ latestTopics }}" wx:key="id">
       {{ item.title }}
-    </block>
   </view>
 </view>

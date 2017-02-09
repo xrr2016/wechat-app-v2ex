@@ -1,8 +1,9 @@
 {
   "pages":[
     "pages/latest/latest",
-     "pages/index/index",
-    "pages/hot/hot"
+    "pages/index/index",
+    "pages/hot/hot",
+    "pages/user/user"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -24,6 +25,9 @@
     },{
       "pagePath":"pages/hot/hot",
       "text":"最热主题"
+    },{
+      "pagePath":"pages/user/user",
+      "text":"用户查询"
     }]
   }
 }
