@@ -2,6 +2,13 @@
 <view class="container">
   <text class="topic-title">{{msg}}</text>
   <view class="topic-item" wx:for="{{ latestTopics }}" wx:key="id">
-      {{ item.title }}
+    <image class="item-avatar item-left" src="{{item.member.avatar_mini}}"></image>
+    <view class="item-right">
+      <text class="item-title">{{ item.title }}</text>
+      <view class="item-tag inline">{{ item.node.title }}</view>
+      <view class="point"></view>
+      <text class="item-author inline">{{item.member.username}}</text>
+      <text class="replies">回复数:{{ item.replies }}</text>
+    </view>
   </view>
 </view>

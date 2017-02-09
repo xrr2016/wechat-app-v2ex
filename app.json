@@ -3,7 +3,8 @@
     "pages/latest/latest",
     "pages/index/index",
     "pages/hot/hot",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/topic/topic"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -27,7 +28,7 @@
       "text":"最热主题"
     },{
       "pagePath":"pages/user/user",
-      "text":"用户查询"
+      "text":"查询用户"
     }]
   }
 }

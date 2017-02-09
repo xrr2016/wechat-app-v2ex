@@ -3,7 +3,7 @@ import { latestTopics } from '../../utils/API'
 Page({
   data:{
     latestTopics:[],
-    msg:"latestTopics"
+    msg:"最新话题"
   },
   onLoad:function(options){
    const self = this
