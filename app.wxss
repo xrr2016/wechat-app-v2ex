@@ -8,6 +8,7 @@
   align-items: baseline;
   justify-content: flex-start;
   box-sizing: border-box;
+  border-top: 2px solid #B9D7EA;
 }
 .inline{
   display: inline-block;
@@ -23,7 +24,7 @@
 .hover{
   background-color: #B9D7EA;
 }
-.topic-title{
+/*.topic-title{
   text-align: left;
   width: 100%;
   font-size: 18px;
@@ -33,7 +34,7 @@
   padding: 4px 0px 2px 12px;
   margin: 6px auto;
   border-bottom: 2px solid #B9D7EA;
-}
+}*/
 .topic-item{
   position: relative;
   display: block;
@@ -61,7 +62,7 @@
 }
 .item-tag{
   font-size: 12px;
-  color:#ddd;
+  color:#999;
   text-align: left;
 }
 .item-author{
@@ -73,10 +74,10 @@
 }
 .replies{
   position: absolute;
-  top: 50%;
-  right: 12%;
+  top: 55%;
+  right: 10%;
   font-size: 12px;
   background: #B9D7EA;
-  padding: 4px 6px;
+  padding: 2px 4px;
   border-radius: 4px;
 }

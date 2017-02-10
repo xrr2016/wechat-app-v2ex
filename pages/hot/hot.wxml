@@ -1,9 +1,14 @@
 <!--pages/hot/hot.wxml-->
-<view class="">
-  <text>{{msg}}</text>
-  <view wx:for="{{ hotTopics }}" wx:key="id">
-    <block>
-      {{ item.title }}
-    </block>
+<view class="container">
+  <view hover-class="hover" data-content="{{item['content']}}"
+  data-url="{{item.url}}" class="topic-item" bindtap="showContent" wx:for="{{ hotTopics }}" wx:key="id">
+    <image class="item-avatar item-left" src="{{item.member.avatar_mini}}"></image>
+    <view class="item-right">
+      <text class="item-title">{{ item.title }}</text>
+      <view class="item-tag inline">{{ item.node.title }}</view>
+      <view class="point"></view>
+      <text class="item-author inline">{{item.member.username}}</text>
+      <text class="replies">回复数:{{ item.replies }}</text>
+    </view>
   </view>
 </view>

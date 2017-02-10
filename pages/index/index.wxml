@@ -1,4 +1,5 @@
 <!--index.wxml-->
 <view class="container">
-    <image src="//v2ex.assets.uxengine.net/site/logo@2x.png?m=1346064962"></image>
+    <image class="logo" src="../../img/logo@2x.png"></image>
+    <text class="greet">{{msg}}</text>
 </view>
