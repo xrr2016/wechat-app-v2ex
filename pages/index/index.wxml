@@ -1,4 +1,4 @@
 <!--index.wxml-->
 <view class="container">
-    Hello
+    <image src="//v2ex.assets.uxengine.net/site/logo@2x.png?m=1346064962"></image>
 </view>
