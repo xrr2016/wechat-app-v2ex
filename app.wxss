@@ -9,6 +9,7 @@
   justify-content: flex-start;
   box-sizing: border-box;
   border-top: 2px solid #B9D7EA;
+  font-family:Arial, Helvetica, sans-serif;
 }
 .inline{
   display: inline-block;

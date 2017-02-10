@@ -1,0 +1,9 @@
+<!--pages/search/search.wxml-->
+<view class="container">
+    <text class="search-value">{{ searchValue }}</text>
+    <input class="search-input" type="text" focus="true" bindinput="search" bindblur="clearInput" maxlength="20"/>
+    <view class="search-result">
+        <text>{{ searchResult.username }}</text>
+        <image src="{{ searchResult.avatar_mini }}"></image>
+    </view>
+</view>

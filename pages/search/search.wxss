@@ -1,0 +1,25 @@
+/* pages/search/search.wxss */
+.container{
+    align-items: center;
+    padding-top: 10%;
+}
+.search-value{
+    color: #999;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.search-input{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: #999;
+    font-size: 24px;
+    padding-left: 12px;
+    background-color: #B9D7EA;
+    border-radius: 2px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, .2);
+}
+.search-result{}
