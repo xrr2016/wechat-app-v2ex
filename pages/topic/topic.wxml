@@ -1,5 +1,4 @@
 <!--pages/topic/topic.wxml-->
-<text>pages/topic/topic.wxml</text>
 <view>
     {{ content }}
     {{ url }}
