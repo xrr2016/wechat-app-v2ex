@@ -1,4 +1,5 @@
 <!--pages/user/user.wxml-->
 <view class="container">
-
+    <image src="{{user.avatar_mini}}"></image>
+    {{user.id}}
 </view>

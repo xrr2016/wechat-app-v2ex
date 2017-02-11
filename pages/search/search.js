@@ -3,6 +3,7 @@ import { userinfo } from '../../utils/API'
 Page({
   data:{
     searchValue:"",
+    searchUrl : "",
     searchResult:{}
   },
   onLoad:function(options){
@@ -10,15 +11,27 @@ Page({
       searchValue : "请输入需要查询用户的ID或用户名"
     })
   },
+  onInput(e){
+    let value = e.detail.value
+    this.setData({
+      searchValue : value
+    })
+  },
   search(e){
     const self = this
-    let value = e.detail.value
+    const value = this.data.searchValue
     if(!value) return
     if(typeof value === "string"){
-      let url = `${userinfo}?username=${value}`
-    }else if(typeof value === "number"){
-      let url = `${userinfo}?id=${value}`
-    }else{
+      const searchUrl = `${userinfo}?username=${value}`
+      this.setData({
+        searchUrl : searchUrl
+      })
+    } else if(typeof value === "number"){
+      const searchUrl = `${userinfo}?id=${value}`
+      this.setData({
+        searchUrl : searchUrl
+      })
+    } else {
       wx.showToast({
         title:"请输入正确的用户名或ID",
         mask:true,
@@ -26,23 +39,26 @@ Page({
       })
       return 
     }
-    this.setData({
-      searchValue : value
-    })
     wx.request({
-      url: url,
+      url: self.data.searchUrl,
       method: 'GET',
       success: function(res){
          self.setData({
            searchResult : res.data
-         }) 
+         })
+         wx.navigateTo({
+           url: `/pages/user/user?res=${self.data.searchResult}`,
+           success: function(res){
+             console.log('user page')
+           }
+         })
       }
     })
   },
-  clearInput(e){
-    e.detail.value = ""
-    this.setData({
+  onHide(){
+     this.setData({
       searchValue:"",
+      searchUrl:"",
       searchResult:[]
     })
   }

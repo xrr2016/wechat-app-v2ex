@@ -1,9 +1,6 @@
 <!--pages/search/search.wxml-->
 <view class="container">
     <text class="search-value">{{ searchValue }}</text>
-    <input class="search-input" type="text" focus="true" bindinput="search" bindblur="clearInput" maxlength="20"/>
-    <view class="search-result">
-        <text>{{ searchResult.username }}</text>
-        <image src="{{ searchResult.avatar_mini }}"></image>
-    </view>
+    <input class="search-input" type="text" focus="true"  bindinput="onInput" maxlength="20"/>
+    <button class="search-btn" type="primary" size="mini" bindtap="search">查询</button>
 </view>
