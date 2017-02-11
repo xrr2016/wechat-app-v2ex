@@ -1,7 +1,7 @@
 <!--pages/latest/latest.wxml-->
 <view class="container">
-  <view hover-class="hover" data-content="{{item['content']}}"
-  data-url="{{item.url}}" class="topic-item" bindtap="showContent" wx:for="{{ latestTopics }}" wx:key="id">
+  <view hover-class="hover" 
+  data-id="{{item.id}}" class="topic-item" bindtap="showContent" wx:for="{{ latestTopics }}" wx:key="id">
     <image class="item-avatar item-left" src="{{item.member.avatar_mini}}"></image>
     <view class="item-right">
       <text class="item-title">{{ item.title }}</text>

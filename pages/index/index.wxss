@@ -1,6 +1,6 @@
 /**index.wxss**/
 .container{
-    padding-top: 50%;
+    padding-top: 40%;
     align-items: center;
     background-color: #f4f4f4;
 }
@@ -8,9 +8,21 @@
     width: 94px;
     height: 30px;
 }
-.greet{
+.slogan{
     margin-top: 12px;
     font-style: italic;
     font-size: 16px;
     color:#999;
+}
+.description{
+    font-size: 12px;
+    margin-bottom:4px;
+    margin-top: 80%;
+    padding: 4px;
+    text-align: left;
+    color: #ccc;
+}
+.domain{
+    font-size: 12px;
+    color: #ccc;
 }

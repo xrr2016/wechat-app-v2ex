@@ -1,9 +1,9 @@
 // pages/latest/latest.js
-import { latestTopics } from '../../utils/API'
+import { latestTopics,topicReplies } from '../../utils/API'
 Page({
   data:{
     latestTopics:[],
-    msg:"最新话题"
+    topicId : ""
   },
   onLoad:function(options){
    const self = this
@@ -18,11 +18,9 @@ Page({
    })
   },
   showContent(e){
-    const content = e.currentTarget.dataset.content
-    const url = e.currentTarget.dataset.url
+    const topicId = e.currentTarget.dataset.id
     wx.navigateTo({
-      // url: "/pages/topic/topic?content=" + content
-      url : `/pages/topic/topic?content=${content}&url=${url}`
+      url : `/pages/topic/topic?id=${topicId}`
     })
   }
 })
