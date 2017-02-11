@@ -3,7 +3,7 @@
 感谢V2EX社区提供的api
 
 ## 示例
-[start](./demo/start.gif)
+![start](./demo/start.gif)
 
 ## Useage
 
