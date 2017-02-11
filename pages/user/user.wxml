@@ -1,5 +1,7 @@
 <!--pages/user/user.wxml-->
 <view class="container">
-    <image src="{{userinfo.avatar_mini}}"></image>
-    {{userinfo.id}}
+    <image class="user-avatar" src="{{userinfo.avatar_large}}"></image>
+    <text class="user-name">{{userinfo.username}}</text>
+    <text class="user-bio">简介:{{userinfo.bio}}</text>
+    <text class="user-github">Github:{{userinfo.github}}</text>
 </view>

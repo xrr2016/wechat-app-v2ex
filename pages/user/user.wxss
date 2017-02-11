@@ -1,1 +1,28 @@
 /* pages/user/user.wxss */
+.container{
+    align-items: center;
+    text-align: center;
+    padding-top: 20%;
+    background-color: #f4f4f4;
+}
+.user-avatar{
+    width: 96px;
+    height: 96px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, .1);
+    margin-bottom: 24px;
+}
+.user-name{
+    font-weight: bold;
+}
+.user-bio{
+    font-size: 14px;
+    color: #999;
+    text-align: left;
+    margin: 12px auto;
+    text-indent: 2em;
+    width: 90%;
+}
+.user-github{
+    font-size: 14px;
+    text-align: left;
+}

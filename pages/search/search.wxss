@@ -1,6 +1,6 @@
 /* pages/search/search.wxss */
 .container{
-    align-items: center;
+    align-items:center;
     padding-top: 10%;
 }
 .search-value{
@@ -23,5 +23,11 @@
     box-shadow: 4px 4px 10px rgba(0, 0, 0, .2);
 }
 .search-btn{
+    width:80%;
+    -webkit-appearance: none;
+    border: none;
+    background-color: #B9D7EA;
+    border-radius: 2px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, .2);
     margin-top: 24px;
 }
