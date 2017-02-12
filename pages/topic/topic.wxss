@@ -1,1 +1,18 @@
 /* pages/topic/topic.wxss */
+.container{}
+.title{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+.content{
+    font-size: 14px;
+}
+.tag{
+    font-size: 12px;
+    color:#f4f4f4;
+    background-color: #ddd;
+}
+.reply{
+    font-size: 14px;
+}
