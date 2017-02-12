@@ -1,4 +1,9 @@
 <!--pages/topic/topic.wxml-->
 <view>
-    {{ topicId }}
+    {{ topic.title }}
+    <text>{{topic.content}}</text>
+    <text>{{topic.node.title}}</text>
+</view>
+<view wx:for="{{ replies }}" wx:key="{{item.id}}">
+    {{item.content}}
 </view>
