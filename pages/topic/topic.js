@@ -21,6 +21,9 @@ Page({
         console.dir(self.data.topic)
       }
     })
+    wx.setNavigationBarTitle({
+      title: `${this.data.topic.title}`
+    })
     wx.request({
       url: `${topicReplies}?topic_id=${self.data.topicId}`,
       method: 'GET',
