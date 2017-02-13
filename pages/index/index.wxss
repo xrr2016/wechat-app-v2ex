@@ -11,7 +11,7 @@
 .slogan{
     margin-top: 12px;
     font-style: italic;
-    font-size: 16px;
+    font-size: 12px;
     color:#999;
 }
 .description{

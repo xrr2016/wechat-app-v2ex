@@ -22,10 +22,10 @@ Page({
           wx.switchTab({
             url: '/pages/hot/hot',
             success: function (res) {
-              console.log('latest')
+              console.log('hot')
             }
           })
-        }, 1000)
+        }, 1500)
       }
     })
   }

@@ -1,12 +1,16 @@
 // pages/user/user.js
-import { userinfo } from '../../utils/API'
+import { userinfo, topic } from '../../utils/API'
 Page({
   data: {
     searchUrl: "",
-    userinfo: {}
+    userinfo: {},
+    userTopics: []
   },
   onLoad: function (options) {
-    console.log(options)
+    wx.showToast({
+      title: "加载中",
+      icon: "Loading"
+    })
     const self = this
     this.setData({
       searchUrl: options.value
@@ -20,10 +24,28 @@ Page({
         })
       }
     })
+    wx.request({
+      url: `${topic}?username=${self.data.userinfo.username}`,
+      method: 'GET',
+      success: function (res) {
+        self.setData({
+          userTopics: res.data
+        })
+        wx.hideToast()
+      }
+    })
   },
-  onUnload: function () {
+  onHide:function() {
     this.setData({
-      user: {}
+      searchUrl: "",
+      userinfo: {},
+      userTopics: []
+    })
+  },
+  showTopic(e) {
+    const topicId = e.currentTarget.dataset.id
+    wx.navigateTo({
+      url: `/pages/topic/topic?id=${topicId}`
     })
   }
 })

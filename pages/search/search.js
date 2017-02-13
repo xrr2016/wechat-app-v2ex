@@ -27,17 +27,7 @@ Page({
       return
     }
     wx.navigateTo({
-      url: `/pages/user/user?value=${self.data.searchValue}`,
-      success: function (res) {
-        console.log('user page')
-      }
-    })
-  },
-  onHide() {
-    this.setData({
-      searchValue: "",
-      searchUrl: "",
-      searchResult: []
+      url: `/pages/user/user?value=${self.data.searchValue}`
     })
   }
 })

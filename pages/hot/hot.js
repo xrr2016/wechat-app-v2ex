@@ -6,6 +6,10 @@ Page({
   },
   onLoad: function (options) {
     const self = this
+    wx.showToast({
+      title: '加载中',
+      icon: 'loading'
+    })
     wx.request({
       url: hotTopics,
       method: 'GET',
@@ -13,6 +17,7 @@ Page({
         self.setData({
           hotTopics: res.data
         })
+        wx.hideToast()
       }
     })
   },

@@ -1,6 +1,6 @@
 <!--pages/hot/hot.wxml-->
 <view class="container">
-  <view hover-class="hover" data-id="{{item.id}}" class="topic-item" bindtap="showContent" wx:for="{{ hotTopics }}" wx:key="id">
+  <view  data-id="{{item.id}}" class="topic-item" bindtap="showContent" wx:for="{{ hotTopics }}" wx:key="id">
     <image class="item-avatar item-left" src="{{item.member.avatar_mini}}"></image>
     <view class="item-right">
       <text class="item-title">{{ item.title }}</text>

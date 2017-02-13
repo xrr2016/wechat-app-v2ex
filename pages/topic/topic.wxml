@@ -1,10 +1,19 @@
+
 <!--pages/topic/topic.wxml-->
 <view class="container">
-    <text class="title">{{ topic.title }}</text>
-    <text class="content">{{topic.content}}</text>
-    <text class="tag">{{topic.node.title}}</text>
-    <view class="divider"></view>
-    <view class="reply" wx:for="{{ replies }}" wx:key="{{item.id}}">
-        {{item.content}}
+  <text class="title">{{ topic.title }}</text>
+  <view class="author">
+    <image class="author-avatar" src="{{topic.member.avatar_mini}}"></image>
+    <text class="author-name">{{topic.member.username}}</text>
+  </view>
+  <text class="content">{{topic.content}}</text>
+  <view class="divider"></view>
+
+  <view class="reply" wx:for="{{ replies }}" wx:key="{{item.id}}" data-id="{{item.id}}" bindtap="searchUser">
+    <view class="reply-left">
+      <image class="avatar" src="{{item.member.avatar_mini}}"></image>
+      <text class="name">{{item.member.username}}</text>
     </view>
+    <view class="reply-right">{{item.content}} <text class="thanks">{{item.thanks}}</text></view>
+  </view>
 </view>

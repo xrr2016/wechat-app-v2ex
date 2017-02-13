@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="container">
-    <image class="logo" src="../../img/logo@2x.png"></image>
+    <image class="logo" src="../../img/logo.png"></image>
     <text class="slogan">{{slogan}}</text>
     <text class="description">{{description}}</text>
     <text class="domain">{{domain}}</text>
