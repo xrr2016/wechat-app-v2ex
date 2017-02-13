@@ -1,11 +1,10 @@
 <!--pages/topic/topic.wxml-->
 <view class="container">
-    <text class="title">
-        {{ topic.title }}
-    </text>
+    <text class="title">{{ topic.title }}</text>
     <text class="content">{{topic.content}}</text>
     <text class="tag">{{topic.node.title}}</text>
-</view>
-<view class="reply" wx:for="{{ replies }}" wx:key="{{item.id}}">
-    {{item.content}}
+    <view class="divider"></view>
+    <view class="reply" wx:for="{{ replies }}" wx:key="{{item.id}}">
+        {{item.content}}
+    </view>
 </view>

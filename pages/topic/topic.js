@@ -22,7 +22,7 @@ Page({
       }
     })
     wx.setNavigationBarTitle({
-      title: `${this.data.topic.title}`
+      title: `${self.data.topic.node.title}`
     })
     wx.request({
       url: `${topicReplies}?topic_id=${self.data.topicId}`,
