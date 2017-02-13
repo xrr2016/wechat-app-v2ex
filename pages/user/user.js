@@ -35,7 +35,7 @@ Page({
       }
     })
   },
-  onHide:function() {
+  onUnLoad:function() {
     this.setData({
       searchUrl: "",
       userinfo: {},

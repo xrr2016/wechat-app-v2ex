@@ -29,5 +29,10 @@ Page({
     wx.navigateTo({
       url: `/pages/user/user?value=${self.data.searchValue}`
     })
+  },
+  onHide:function(){
+    this.setData({
+       searchValue: ""
+    })
   }
 })
