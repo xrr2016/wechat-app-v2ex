@@ -3,12 +3,16 @@
 感谢V2EX社区提供的接口
 
 有3个基本功能,查看热议的话题,查看最新的话题和通过用户名查询用户信息.
-使用小程序提供的发起请求,列表渲染,页面跳转,显示提示等API[小程序文档](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
 
+使用小程序提供的发起请求,列表渲染,页面跳转,显示提示等API[小程序文档](https://mp.weixin.qq.com/debug/wxadoc/dev/index.html)
+一点需要注意的是 wx.navigateTo 和 wx.redirectTo 不允许跳转到 tabbar 页面，只能用 wx.switchTab 跳转到 tabbar 页面
 
 ## 示例
 
 ![启动](./demo/start.gif) ![查看帖子](./demo/checkTopic.gif) ![查询用户](./demo/search.gif)
+
+Gif制作
+- LICEcap
 
 ## 项目结构图
 
