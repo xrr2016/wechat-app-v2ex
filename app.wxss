@@ -19,7 +19,7 @@
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background: #B9D7EA;
+  background: #212121;
   margin: 0 10px;
 }
 .hover{

@@ -20,7 +20,7 @@ Page({
       complete: function () {
         setTimeout(() => {
           wx.switchTab({
-            url: '/pages/latest/latest',
+            url: '/pages/hot/hot',
             success: function (res) {
               console.log('latest')
             }

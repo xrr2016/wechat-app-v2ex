@@ -1,35 +1,39 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
-    "pages/latest/latest",
     "pages/hot/hot",
-    "pages/search/search",
+    "pages/latest/latest",
     "pages/topic/topic",
+    "pages/search/search",
     "pages/user/user"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#769FCD",
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#212121",
     "navigationBarTitleText": "V2EX",
-    "navigationBarTextStyle":"light",
+    "navigationBarTextStyle": "light",
     "backgroundColor": "#f4f4f4",
-    "enablePullDownRefresh": true
+    "enablePullDownRefresh": false
   },
   "tabBar": {
-    "color": "#ccc",
-    "selectedColor":"#fff",
-    "backgroundColor": "#769FCD",
-    "borderStyle" : "white",
-    "position":"bottom",
-    "list" : [{
-      "pagePath":"pages/latest/latest",
-      "text":"最新主题"
-    },{
-      "pagePath":"pages/hot/hot",
-      "text":"最热主题"
-    },{
-      "pagePath":"pages/search/search",
-      "text":"查询用户"
-    }]
+    "color": "#999",
+    "selectedColor": "#fff",
+    "backgroundColor": "#212121",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/hot/hot",
+        "text": "最热主题"
+      },
+      {
+        "pagePath": "pages/latest/latest",
+        "text": "最新主题"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "查询用户"
+      }
+    ]
   }
 }
